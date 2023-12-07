@@ -7,7 +7,6 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
 } from "@nextui-org/react";
 import Image from "next/image";
 import { useState } from "react";
@@ -16,11 +15,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    "About Us",
-    "What we do",
-    "Why choose us",
-    "Testimonial",
-    "Contact",
+    { name: "About Us", href: "#" },
+    { name: "What we do", href: "#" },
+    { name: "Why choose us", href: "#" },
+    { name: "Testimonial", href: "#" },
+    { name: "Contact", href: "#" },
   ];
 
   return (
@@ -48,8 +47,8 @@ export default function Header() {
       <NavbarContent className="hidden lg:flex gap-[60px] ml-[60px]">
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
-            <Link href="#" className="text-[16px] text-dark">
-              {item}
+            <Link href={item.href} className="text-[16px] text-dark">
+              {item.name}
             </Link>
           </NavbarItem>
         ))}
@@ -69,8 +68,8 @@ export default function Header() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full text-dark" href="#" size="lg">
-              {item}
+            <Link className="w-full text-dark" href={item.href}>
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}
