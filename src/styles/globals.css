@@ -18,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #fff;
+  background: #f9f9f9;
 }
 .gradient-primary {
   background: linear-gradient(90deg, #4f00ff -5.02%, #b899ff 109.53%);

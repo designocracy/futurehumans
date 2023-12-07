@@ -16,7 +16,7 @@ export default function Button({
       : variant === 'primary'
         ? 'data-[hover=true]:bg-secondary text-white'
         : variant === 'transparent'
-          ? 'text-dark border-2 border-dark data-[hover=true]:bg-primary data-[hover=true]:text-white data-[hover=true]:border-transparent'
+          ? 'text-dark border-2 border-dark data-[hover=true]:bg-primary data-[hover=true]:text-[#fff] data-[hover=true]:border-transparent'
           : '',
     size,
     className && className,

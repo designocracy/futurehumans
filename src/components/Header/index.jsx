@@ -27,7 +27,7 @@ export default function Header() {
       onMenuOpenChange={setIsMenuOpen}
       maxWidth={'full'}
       shouldHideOnScroll={true}
-      className="max-w-[1550px] mx-auto justify-center"
+      className="max-w-[1600px] mx-auto justify-center bg-[#f9f9f9]"
     >
       <NavbarContent data-justify={''}>
         <NavbarMenuToggle
