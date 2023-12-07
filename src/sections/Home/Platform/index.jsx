@@ -3,10 +3,10 @@ import Flex from '@/interfaces/Flex'
 
 export default function HomePlatform() {
   return (
-    <Container className={'mt-[200px]'}>
+    <Container className={'mt-[200px] pb-[200px]'}>
       <h3 className="text-black text-[20px] leading-[92%] font-normal">PLATFORM FUTURE HUMAN</h3>
       <Flex justify={'between'}>
-        <div className="max-w-[50%]">
+        <div className="">
           <h2 className="text-[64px] text-black leading-[92%] mt-[20px] mb-[15px]">
             <b>Success</b> through data
           </h2>
@@ -15,12 +15,38 @@ export default function HomePlatform() {
             commitment to excellence and the transformative power of our services.
           </p>
         </div>
-        <div className="max-w-[50%]">
+        <div className="">
           <h1 className="text-[120px] mt-[20px] -tracking-[3.6px] leading-[92.46%] font-black gradient-primary-text">
             $110,000,000+
           </h1>
           <p className="border-b-2 pb-[10px] mt-[20px] border-secondary text-black -tracking-[0.9px] leading-[92%] text-[30px]  font-light">
             Total value of projects
+          </p>
+        </div>
+      </Flex>
+      <Flex className={'mt-[50px]'} justify={'between'}>
+        <div className="max-w-[50%]">
+          <h1 className="text-[120px] mt-[20px] -tracking-[3.6px] leading-[92.46%] font-black gradient-primary-text">
+            2,000+
+          </h1>
+          <p className="border-b-2 pb-[10px] mt-[20px] border-secondary text-black -tracking-[0.9px] leading-[92%] text-[30px]  font-light">
+            Projects to date
+          </p>
+        </div>
+        <div className="">
+          <h1 className="text-[120px] mt-[20px] -tracking-[3.6px] leading-[92.46%] font-black gradient-primary-text">
+            100,000+
+          </h1>
+          <p className="border-b-2 pb-[10px] mt-[20px] border-secondary text-black -tracking-[0.9px] leading-[92%] text-[30px]  font-light">
+            Dediacted developers
+          </p>
+        </div>
+        <div className="">
+          <h1 className="text-[120px] mt-[20px] -tracking-[3.6px] leading-[92.46%] font-black gradient-primary-text">
+            2,000+
+          </h1>
+          <p className="border-b-2 pb-[10px] mt-[20px] border-secondary text-black -tracking-[0.9px] leading-[92%] text-[30px]  font-light">
+            Approved service provider
           </p>
         </div>
       </Flex>
