@@ -25,9 +25,9 @@ export default function Header() {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      maxWidth={'xl'}
+      maxWidth={'full'}
       shouldHideOnScroll={true}
-      classNames="justify-center"
+      className="max-w-[1550px] mx-auto justify-center"
     >
       <NavbarContent data-justify={''}>
         <NavbarMenuToggle

@@ -12,6 +12,7 @@ module.exports = {
     container: {
       center: true,
     },
+
     extend: {
       colors: {
         primary: '#4f00ff',

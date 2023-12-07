@@ -13,7 +13,7 @@ export default function HomePlatform() {
     <Container className={'mt-[200px] pb-[200px]'}>
       <h3 className="text-black text-[20px] leading-[92%] font-normal">PLATFORM FUTURE HUMAN</h3>
       <Flex justify={'between'}>
-        <div className="">
+        <div className="max-w-[42%]">
           <h2 className="text-[64px] text-black leading-[92%] mt-[20px] mb-[15px]">
             <b>Success</b> through data
           </h2>
