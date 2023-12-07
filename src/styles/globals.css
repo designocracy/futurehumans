@@ -20,3 +20,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #fff;
 }
+.gradient-primary {
+  background: linear-gradient(90deg, #4f00ff -5.02%, #b899ff 109.53%);
+  color: #fff;
+}
