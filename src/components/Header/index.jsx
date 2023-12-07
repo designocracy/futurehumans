@@ -7,40 +7,35 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-} from "@nextui-org/react";
-import Image from "next/image";
-import { useState } from "react";
+} from '@nextui-org/react'
+import Image from 'next/image'
+import { useState } from 'react'
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const menuItems = [
-    { name: "About Us", href: "#" },
-    { name: "What we do", href: "#" },
-    { name: "Why choose us", href: "#" },
-    { name: "Testimonial", href: "#" },
-    { name: "Contact", href: "#" },
-  ];
+    { name: 'About Us', href: '#' },
+    { name: 'What we do', href: '#' },
+    { name: 'Why choose us', href: '#' },
+    { name: 'Testimonial', href: '#' },
+    { name: 'Contact', href: '#' },
+  ]
 
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      maxWidth={"xl"}
+      maxWidth={'xl'}
       shouldHideOnScroll={true}
       classNames="justify-center"
     >
-      <NavbarContent data-justify={""}>
+      <NavbarContent data-justify={''}>
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           className="lg:hidden"
         />
         <NavbarBrand>
-          <Image
-            src="/images/logo.png"
-            height={56}
-            width={162}
-            alt="Future Humans Logo"
-          />
+          <Image src="/images/logo.png" height={56} width={162} alt="Future Humans Logo" />
         </NavbarBrand>
       </NavbarContent>
 
@@ -75,5 +70,5 @@ export default function Header() {
         ))}
       </NavbarMenu>
     </Navbar>
-  );
+  )
 }
