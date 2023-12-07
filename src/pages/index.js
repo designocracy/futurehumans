@@ -1,22 +1,29 @@
+import AppLayout from "@/layout/AppLayout";
 import Header from "@/components/Header";
-
-import { League_Spartan } from "next/font/google";
-import Link from "next/link";
-const leagueSpartan = League_Spartan({ subsets: ["latin"] });
+import Topbar from "@/components/Topbar";
 
 export default function Home() {
   return (
-    <main className={leagueSpartan.className}>
-      <div className="gradient-primary text-center capitalize py-[12px] text-[12px]">
-        <p>
-          We&lsquo;re assembling a United Tech Force to help non-profits and
-          startups affected by the war
-          <Link href="#" className="ml-4 underline">
-            Get Involved
-          </Link>
-        </p>
-      </div>
-      <Header />;
-    </main>
+    <AppLayout>
+      <Topbar />
+      <Header />
+      <section className="flex justify-center items-center mt-[100px]">
+        <div className="text-center w-full max-w-[1758px] py-[50px] pb-[300px] bg-[url(/images/hero-banner.png)] bg-no-repeat bg-center ">
+          <h1 className="text-[96px]  -tracking-[2.88px] leading-[92.46%]">
+            <span className=" font-bold block gradient-primary-text ">
+              Relationship managers
+            </span>
+            <span>
+              For unicorns and
+              <br /> software developers
+            </span>
+          </h1>
+          <p className="text-dark font-normal text-[29px] mt-[20px] leading-[92.46%] -tracking-[0.877px]">
+            We match your tech needs with the best European software
+            <br /> development teams available for long-term rent.
+          </p>
+        </div>
+      </section>
+    </AppLayout>
   );
 }
