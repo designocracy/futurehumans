@@ -414,8 +414,8 @@ export default function Home() {
             </Flex>
           </Flex>
         </section>
-        <section id="helps-grow">
-          <Flex className="max-w-[1767px] bg-black px-[116px] py-[213px] mx-auto rounded-[50px]">
+        <section id="helps-grow ">
+          <Flex className="max-w-[1767px] relative bg-black px-[116px] py-[213px] mx-auto rounded-[50px]">
             <div className="max-w-[50%]">
               <h2 className="font-light text-[106px] text-white -tracking-[3.185px] leading-[92%] ">
                 Future humans <b className="font-bold">helps grow</b> your software service{' '}
@@ -444,6 +444,13 @@ export default function Home() {
                 packages
               </Button>
             </div>
+            <Image
+              src="/images/cube.png"
+              height={169}
+              width={169}
+              alt="Cube"
+              className="absolute -bottom-16 -right-6"
+            />
           </Flex>
         </section>
       </div>
