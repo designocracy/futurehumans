@@ -1,8 +1,8 @@
 import classNames from 'classnames'
 
-export default function Flex({ justify, align, children, className }) {
+export default function Flex({ justify, align, children, className, inline }) {
   const classes = classNames(
-    'flex',
+    inline ? 'inline-flex' : 'flex',
     justify && `justify-${justify}`,
     align && `items-${align}`,
     className && className,

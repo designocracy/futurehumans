@@ -54,7 +54,7 @@ export default function Home() {
       </section>
       <div
         className="bg-[url(/images/bg1.png)] bg-no-repeat"
-        style={{ backgroundPosition: 'center 5%', backgroundSize: 'auto' }}
+        style={{ backgroundPosition: 'center 3%', backgroundSize: 'auto' }}
       >
         <section id="home-platform">
           <Container className={'mt-[160px] pb-[100px]'}>
@@ -158,17 +158,20 @@ export default function Home() {
               </div>
             </Flex>
           </Container>
-          <div className="max-w-[1700px] w-full mx-auto">
-            <Flex>
-              <div className="max-w-[50%] w-[100%] bg-primary rounded-[20px] mt-[45px] px-[67px] py-[45px]">
+          <div
+            className="max-w-[1700px] w-full mx-auto bg-[url('/images/shadow-bg.png')] bg-no-repeat pb-[200px]"
+            style={{ backgroundPosition: 'center', backgroundSize: 'contain' }}
+          >
+            <Flex align={''} className={'gap-[35px] mt-[50px]'}>
+              <div className="max-w-[50%] w-[100%] bg-primary rounded-[20px]  px-[67px] py-[45px]">
                 <p className="text-white text-[30px] -tracking-[0.9px] leading-[92%]">
                   Their developers look for meaningful, full time dedication and opportunity to move
                   on once the time comes
                 </p>
                 <Image
-                  className="mt-[40px]"
+                  className="mt-[41px]"
                   alt="developer"
-                  src="/images/home.png"
+                  src="/images/card1.png"
                   width={642}
                   height={331}
                 />
@@ -179,11 +182,59 @@ export default function Home() {
                   looking for a developers
                 </Button>
               </div>
+              <Flex className="max-w-[50%] flex-col" justify={'between'}>
+                <Flex justify="between" className={'bg-white rounded-[20px]'}>
+                  <Flex
+                    className="px-[52px] py-[38px] flex-col w-[max-content]"
+                    justify={'between'}
+                  >
+                    <p className="text-[#565656]  text-[30px] -tracking-[0.9px] leading-[92%]">
+                      Their developers look for meaningful, full time dedication and opportunity to
+                      move on once the time comes
+                    </p>
+                    <Button
+                      className="w-[max-content] uppercase rounded-[30px] py-[30px] px-[50px]"
+                      variant={'secondary'}
+                    >
+                      collab with company
+                    </Button>
+                  </Flex>
+                  <Image
+                    alt="developer"
+                    className="w-[max-content]"
+                    src="/images/card2.png"
+                    width={234}
+                    height={295}
+                  />
+                </Flex>
+                <Flex justify="between" className={'bg-white rounded-[20px]'}>
+                  <Flex
+                    className="px-[52px] py-[38px] flex-col w-[max-content]"
+                    justify={'between'}
+                  >
+                    <p className="text-[#565656]  text-[30px] -tracking-[0.9px] leading-[92%]">
+                      Ensuring the overall knowledge transfer and accumulation to and within your
+                      organization.
+                    </p>
+                    <Button
+                      className="w-[max-content] uppercase rounded-[30px] py-[30px] px-[50px]"
+                      variant={'secondary'}
+                    >
+                      collab with company
+                    </Button>
+                  </Flex>
+                  <Image
+                    alt="developer"
+                    className="w-[max-content]"
+                    src="/images/card3.png"
+                    width={234}
+                    height={295}
+                  />
+                </Flex>
+              </Flex>
             </Flex>
           </div>
         </section>
-
-        <div className="h-[500vh]" />
       </div>
     </AppLayout>
   )
