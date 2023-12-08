@@ -160,7 +160,7 @@ export default function Home() {
           </Container>
           <div
             className="max-w-[1700px] w-full mx-auto bg-[url('/images/shadow-bg.png')] bg-no-repeat pb-[200px]"
-            style={{ backgroundPosition: 'center', backgroundSize: 'contain' }}
+            style={{ backgroundPosition: 'left center', backgroundSize: 'contain' }}
           >
             <Flex align={''} className={'gap-[35px] mt-[50px]'}>
               <div className="max-w-[50%] w-[100%] bg-primary rounded-[20px]  px-[67px] py-[45px]">
