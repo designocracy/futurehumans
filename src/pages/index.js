@@ -19,7 +19,7 @@ export default function Home() {
     <AppLayout>
       <Topbar />
       <Header />
-      <section id="home-banner">
+      <section id="banner">
         <Flex justify="center" align="center" className={'mt-[110px]'}>
           <div className="text-center w-full max-w-[1758px] pt-[50px] pb-[160px] bg-[url(/images/hero-banner.png)] bg-no-repeat bg-center ">
             <h1 className="text-[96px]  -tracking-[2.88px] leading-[92.46%]">
@@ -54,17 +54,17 @@ export default function Home() {
       </section>
       <div
         className="bg-[url(/images/bg1.png)] bg-no-repeat"
-        style={{ backgroundPosition: 'center 3%', backgroundSize: 'auto' }}
+        style={{ backgroundPosition: 'center 35%', backgroundSize: 'auto' }}
       >
-        <section id="home-platform">
+        <section id="platform">
           <Container className={'mt-[160px] pb-[100px]'}>
             <h3 className="text-black text-[20px] leading-[92%] font-normal">
               PLATFORM FUTURE HUMAN
             </h3>
             <Flex justify={'between'}>
               <div className="max-w-[42%]">
-                <h2 className="text-[64px] text-black leading-[92%] mt-[20px] mb-[28px]">
-                  <b>Success</b> through data
+                <h2 className="text-[64px] font-light text-black leading-[92%] mt-[20px] mb-[28px]">
+                  <b className="font-bold">Success</b> through data
                 </h2>
                 <p className="text-dark -tracking-[0.9px] leading-[92%] text-[30px] font-light">
                   Discover the Impact. Explore the Data. of Future hUMANS success—numbers that
@@ -93,12 +93,13 @@ export default function Home() {
           </Container>
         </section>
 
-        <section id="home-horns-to-unicorns">
+        <section id="horns-to-unicorns">
           <Container className={'mt-[150px]'}>
             <Flex>
               <div className="max-w-[45%]">
-                <h2 className="text-[106px] text-black -tracking-[3.185px] leading-[92%] mt-[20px] mb-[15px]">
-                  <b>Matching</b> horns to your <b>unicorns</b>
+                <h2 className="font-light text-[106px] text-black -tracking-[3.185px] leading-[92%] mt-[20px] mb-[15px]">
+                  <b className="font-bold">Matching</b> horns to your{' '}
+                  <b className="font-bold">unicorns</b>
                 </h2>
                 <h3 className="uppercase mt-[11px] text-black text-[20px] leading-[92%] font-normal">
                   why future human
@@ -139,12 +140,13 @@ export default function Home() {
           </Container>
         </section>
 
-        <section id="home-horns-to-unicorns">
+        <section id="horns-to-unicorns">
           <Container className={'mt-[250px]'}>
             <Flex justify={'between'} align={'center'}>
               <div className="max-w-[50%]">
-                <h2 className="text-[64px] text-black -tracking-[1.92px] leading-[92%] mt-[20px] mb-[15px]">
-                  <b>Great CV</b> alone does not guarantee <b>succcessful relationship</b>
+                <h2 className="font-light text-[64px] text-black -tracking-[1.92px] leading-[92%] mt-[20px] mb-[15px]">
+                  <b className="font-bold">Great CV</b> alone does not guarantee{' '}
+                  <b className="font-bold">succcessful relationship</b>
                 </h2>
               </div>
               <div className="max-w-[45%]">
@@ -159,7 +161,7 @@ export default function Home() {
             </Flex>
           </Container>
           <div
-            className="max-w-[1700px] w-full mx-auto bg-[url('/images/shadow-bg.png')] bg-no-repeat pb-[200px]"
+            className="max-w-[1700px] w-full mx-auto bg-[url('/images/shadow-bg.png')] bg-no-repeat pb-[200px] -mb-[350px]"
             style={{ backgroundPosition: 'left center', backgroundSize: 'contain' }}
           >
             <Flex align={''} className={'gap-[35px] mt-[50px]'}>
@@ -233,6 +235,142 @@ export default function Home() {
                 </Flex>
               </Flex>
             </Flex>
+          </div>
+        </section>
+      </div>
+      <div
+        className="bg-[url(/images/bg2.png)] bg-no-repeat "
+        style={{ backgroundPosition: 'center 3%', backgroundSize: 'auto' }}
+      >
+        <section id="developers">
+          <Container className={'pt-[350px] pb-[200px]'}>
+            <h3 className="text-black text-[20px] leading-[92%] font-normal mb-[20px]">
+              ABOUT THE DEVELOPERS
+            </h3>
+            <Flex justify={'between'}>
+              <div className="max-w-[55%]">
+                <h2 className="font-light text-[106px] text-black -tracking-[3.185px] leading-[92%] mb-[15px]">
+                  Devs from <b className="font-bold">Future Humans</b> seem fun
+                </h2>
+              </div>
+              <div className="max-w-[max-content]">
+                <Flex justify="between" align="between" className="flex-col gap-[30px]">
+                  <Button
+                    className=" uppercase rounded-[30px] py-[30px] px-[50px]"
+                    variant={'secondary'}
+                  >
+                    Hire Developer
+                  </Button>
+                  <Button
+                    className=" uppercase rounded-[30px] py-[30px] px-[100px]"
+                    variant={'transparent'}
+                  >
+                    Hire Developer
+                  </Button>
+                </Flex>
+              </div>
+            </Flex>
+            <Flex justify={'between'} align={''} className={'mt-[75px] gap-[75px]'}>
+              <div className="w-1/3">
+                <Flex align={'center'} className={'mb-[85px]'}>
+                  <Image src="/images/dev1.png" width={194} height={185} alt="dev1" />
+                </Flex>
+                <h4 className=" text-black text-[36px] font-light -tracking-[1px] leading-[92%] mb-[20px]">
+                  But are they <b className="font-bold">fun for you?</b>
+                </h4>
+                <p className="text-[#565656]  text-[30px] -tracking-[0.9px] leading-[92%]">
+                  There is about 40% chance that - they are. It’s interesting for us to communicate
+                  with you via text, but talking live would help answer this question much easier.
+                </p>
+              </div>
+              <div className="w-1/3">
+                <Flex align={'center'} className={'mb-[85px]'}>
+                  <Image src="/images/dev2.png" width={194} height={185} alt="dev1" />
+                </Flex>
+                <p className="text-[#565656]  text-[30px] -tracking-[0.9px] leading-[92%]">
+                  The number one conversation (pre-)starter we have is “We hire inhouse and would
+                  like to keep it that way” and yet - in about 40% of the cases, within 1st or 2nd
+                  conversation we land on a pilot project (meaningful thing to be done that could
+                  scale to long-term collaboration)
+                </p>
+              </div>
+              <div className="w-1/3">
+                <Flex align={'center'} className={'mb-[85px]'}>
+                  <Image src="/images/dev3.png" height={191} width={259} alt="dev1" />
+                </Flex>{' '}
+                <h4 className="text-black text-[36px] font-light -tracking-[1px] leading-[92%] mb-[20px]">
+                  So is it <b className="font-bold">for you?</b>
+                </h4>
+                <p className="text-[#565656]  text-[30px] -tracking-[0.9px] leading-[92%]">
+                  40% chance that - it is. Let’s have a call and turn it to 100% clarity.
+                </p>
+              </div>
+            </Flex>
+          </Container>
+        </section>
+        <section id="service-providers">
+          <Container className={'pb-[200px]'}>
+            <h3 className="text-black text-[20px] leading-[92%] font-normal mb-[20px]">
+              SERVICE PROVIDERS
+            </h3>
+            <Flex justify={'between'}>
+              <div className="max-w-[42%]">
+                <h2 className="font-light text-[106px] text-black -tracking-[3.185px] leading-[92%] mb-[15px]">
+                  Home for <span className={`font-black gradient-primary-text `}>2000+</span>{' '}
+                  services provider <b className="font-bold">worldwide</b>
+                </h2>
+
+                <Flex justify="start" align="start" className="mt-[100px] gap-[20px]">
+                  <Button
+                    className="min-w-[350px] uppercase rounded-[30px] py-[30px] px-[50px]"
+                    variant={'secondary'}
+                  >
+                    REGISTER
+                  </Button>
+                  <Button
+                    className="min-w-[350px] uppercase rounded-[30px] py-[30px] px-[50px]"
+                    variant={'transparent'}
+                  >
+                    reserve a call
+                  </Button>
+                </Flex>
+              </div>
+              <div className="max-w-[48%]">
+                <h4 className="text-black text-[36px] font-light -tracking-[1px] leading-[92%] mb-[20px]">
+                  Each with <b className="font-bold">5 - 2000</b> developers.
+                </h4>
+                <p className="text-[#565656]  text-[30px] -tracking-[0.9px] leading-[92%]">
+                  If your developers can adhere to the principles of future humans Dedifesto, then
+                  we can:
+                  <ul className="font-medium mt-[98px] list-disc pl-[25px]">
+                    <li className="mb-[45px]">Match you with future humans clients;</li>
+                    <li className="mb-[45px]">Help build lasting relationships with them;</li>
+                    <li className="mb-[45px]">
+                      And grow your win % of all projects (both in and outside of future humans)
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </Flex>
+          </Container>
+        </section>
+        <section id="got-a-lead">
+          <div className="w-full h-[100vh] relative">
+            <Image
+              src="/images/app-l.png"
+              height={628}
+              width={317}
+              alt="APP 1"
+              className="absolute bottom-0 left-0"
+            />
+            <Image
+              src="/images/app-r.png"
+              height={628}
+              width={317}
+              alt="APP 1"
+              className="absolute bottom-0 right-0"
+            />
+            <Flex justify={'between'}></Flex>
           </div>
         </section>
       </div>
