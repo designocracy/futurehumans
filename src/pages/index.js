@@ -161,7 +161,7 @@ export default function Home() {
             </Flex>
           </Container>
           <div
-            className="max-w-[1700px] w-full mx-auto bg-[url('/images/shadow-bg.png')] bg-no-repeat pb-[200px] -mb-[350px]"
+            className="max-w-[1767px] w-full mx-auto bg-[url('/images/shadow-bg.png')] bg-no-repeat pb-[200px] -mb-[350px]"
             style={{ backgroundPosition: 'left center', backgroundSize: 'contain' }}
           >
             <Flex align={''} className={'gap-[35px] mt-[50px]'}>
@@ -309,7 +309,7 @@ export default function Home() {
           </Container>
         </section>
         <section id="service-providers">
-          <Container className={'pb-[200px]'}>
+          <Container className={'pb-[180px]'}>
             <h3 className="text-black text-[20px] leading-[92%] font-normal mb-[20px]">
               SERVICE PROVIDERS
             </h3>
@@ -342,36 +342,109 @@ export default function Home() {
                 <p className="text-[#565656]  text-[30px] -tracking-[0.9px] leading-[92%]">
                   If your developers can adhere to the principles of future humans Dedifesto, then
                   we can:
-                  <ul className="font-medium mt-[98px] list-disc pl-[25px]">
-                    <li className="mb-[45px]">Match you with future humans clients;</li>
-                    <li className="mb-[45px]">Help build lasting relationships with them;</li>
-                    <li className="mb-[45px]">
-                      And grow your win % of all projects (both in and outside of future humans)
-                    </li>
-                  </ul>
                 </p>
+                <ul className="font-medium mt-[98px] list-disc pl-[25px] text-[#565656]  text-[30px] -tracking-[0.9px] leading-[92%]">
+                  <li className="mb-[45px]">Match you with future humans clients;</li>
+                  <li className="mb-[45px]">Help build lasting relationships with them;</li>
+                  <li className="mb-[45px]">
+                    And grow your win % of all projects (both in and outside of future humans)
+                  </li>
+                </ul>
               </div>
             </Flex>
           </Container>
         </section>
+      </div>
+      <div
+        className="bg-[url(/images/bg3.png)] bg-no-repeat "
+        style={{ backgroundPosition: 'center 7%', backgroundSize: 'auto' }}
+      >
         <section id="got-a-lead">
-          <div className="w-full h-[100vh] relative">
-            <Image
-              src="/images/app-l.png"
-              height={628}
-              width={317}
-              alt="APP 1"
-              className="absolute bottom-0 left-0"
-            />
-            <Image
-              src="/images/app-r.png"
-              height={628}
-              width={317}
-              alt="APP 1"
-              className="absolute bottom-0 right-0"
-            />
-            <Flex justify={'between'}></Flex>
-          </div>
+          <Flex className="w-full smx-auto relative gap-[20px] pb-[200px]">
+            <Flex justify={'start'} className="w-[50%] pt-[165px] gap-[40px]">
+              <Flex align={'end'} className="">
+                <Image src="/images/app-l.png" height={628} width={317} alt="APP 1" x />
+              </Flex>
+              <div className="max-w-[50%] mr-auto">
+                <h2 className="font-light text-[106px] text-black -tracking-[3.185px] leading-[92%] mb-[48px]">
+                  <b className="font-bold">Got a lead</b> you do not sercive?
+                </h2>
+                <h4 className=" text-black text-[36px] font-light -tracking-[1px] leading-[92%] ">
+                  <b className="font-bold">Excahnge it</b> to the one that you do.
+                </h4>
+                <p className="text-[#565656] mb-[28px] text-[30px] -tracking-[0.9px] mt-[124px] leading-[92%]">
+                  I want to hear more:
+                </p>
+                <Button
+                  className="min-w-[350px] uppercase rounded-[30px] py-[30px] px-[50px]"
+                  variant={'transparent'}
+                >
+                  HOW IT WORKS
+                </Button>
+              </div>
+            </Flex>
+            <Flex className="bg-black h-[100%] rounded-tl-[50px] rounded-bl-[50px] w-[50%] pl-[140px] pt-[165px]">
+              <div className=" mr-auto w-[55%] mb-[165px]">
+                <p className="text-[#D6D5D5]  text-[30px] -tracking-[0.9px]  leading-[92%]">
+                  As in relationships - Future humans Lead Exchange Scoring engine ensures that each
+                  prospective client ends up with a g reat match, while the one sending - gets their
+                  too.
+                </p>
+                <p className="text-[#DDD] mt-[49px] text-[30px] -tracking-[0.9px] font-bold leading-[92%]">
+                  200+ Service providers exchange leads in future humans.
+                </p>
+                <p className="text-[#D6D5D5] mt-[49px] text-[30px] -tracking-[0.9px]  leading-[92%]">
+                  As in relationships - Future humans Lead Exchange Scoring engine ensures that each
+                  prospective client ends up with a g reat match, while the one sending - gets their
+                  too.
+                </p>
+                <p className="text-[#D6D5D5] mt-[49px] text-[30px] -tracking-[0.9px]  leading-[92%]">
+                  Lets discuss:
+                </p>
+                <Button
+                  className="min-w-[350px] uppercase rounded-[30px] mt-[28px] py-[30px] px-[50px]"
+                  variant={'secondary'}
+                >
+                  reserve a call
+                </Button>
+              </div>
+              <Flex align={'end'} className=" ml-auto">
+                <Image src="/images/app-r.png" height={628} width={317} alt="APP 1" />
+              </Flex>
+            </Flex>
+          </Flex>
+        </section>
+        <section id="helps-grow">
+          <Flex className="max-w-[1767px] bg-black px-[116px] py-[213px] mx-auto rounded-[50px]">
+            <div className="max-w-[50%]">
+              <h2 className="font-light text-[106px] text-white -tracking-[3.185px] leading-[92%] ">
+                Future humans <b className="font-bold">helps grow</b> your software service{' '}
+                <b className="font-bold">company via</b> higher win %
+              </h2>
+            </div>
+            <div className="max-w-[50%]">
+              <p className="text-[#DDD] text-[30px] -tracking-[0.9px] leading-[92.46%]">
+                Over the last 9 years we have seen and participated in thousands of client -
+                supplier interviews and projects. We’ve observed what helps and especially - what
+                prevents companies from winning, even though they might be the most competitive
+                ones.
+                <br />
+                <br /> Over 2021-2022 we’ve started coaching some of our suppliers to ensure that
+                their potential is properly observed by clients and have found significant changes
+                in win rates in such cases.
+                <br />
+                <br /> Now, in 2023 - we have developed a package, that helps not only get more
+                leads, but grow trust in your brand and win more clients (both in and outside of
+                future humans).
+              </p>
+              <Button
+                className="min-w-[350px] uppercase rounded-[30px] mt-[55px] py-[30px] px-[50px]"
+                variant={'secondary'}
+              >
+                packages
+              </Button>
+            </div>
+          </Flex>
         </section>
       </div>
     </AppLayout>
