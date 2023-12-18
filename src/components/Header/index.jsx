@@ -27,7 +27,7 @@ export default function Header() {
       onMenuOpenChange={setIsMenuOpen}
       maxWidth={'full'}
       shouldHideOnScroll={true}
-      className="max-w-[1600px] mx-auto justify-center bg-[#f9f9f9]"
+      className="mx-auto max-w-[1600px] justify-center bg-[#f9f9f9]"
     >
       <NavbarContent data-justify={''}>
         <NavbarMenuToggle
@@ -39,7 +39,7 @@ export default function Header() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden lg:flex gap-[60px] ml-[60px]">
+      <NavbarContent className="ml-[60px] hidden gap-[60px] lg:flex">
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
             <Link href={item.href} className="text-[16px] text-dark">
@@ -48,14 +48,14 @@ export default function Header() {
           </NavbarItem>
         ))}
       </NavbarContent>
-      <NavbarContent justify="end" className="gap-[60px] bl-1">
+      <NavbarContent justify="end" className="bl-1 gap-[60px]">
         <NavbarItem className="hidden lg:flex ">
-          <Link className="text-secondary text-[16px]" href="#">
+          <Link className="text-[16px] text-secondary" href="#">
             Login
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-primary text-[16px]" href="#">
+          <Link className="text-[16px] text-primary" href="#">
             Sign Up
           </Link>
         </NavbarItem>

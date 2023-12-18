@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "clean": "rm -rf node_modules && rm -rf .next && rm -rf .yarn.lock && yarn cache clean && yarn",
-    "prettier": "prettier -c --write **/* --cache",
+    "prettier": "prettier -c --ignore-unknown **/* --cache",
+    "prettier:fix": "prettier -c --write --ignore-unknown **/* --cache",
     "prepare": "husky install",
     "husky:install": "if not exist .husky (npx husky install)"
   },
@@ -28,6 +29,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.5.9",
     "tailwindcss": "^3.3.0"
   },
   "husky": {
@@ -36,7 +38,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": "prettier --ignore-unknown --write",
-    "*.json": "prettier --ignore-unknown --write"
+    "*.{ts,tsx,js,jsx}": "prettier:fix",
+    "*.json": "prettier:fix"
   }
 }
