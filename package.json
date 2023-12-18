@@ -38,7 +38,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": "prettier:fix",
-    "*.json": "prettier:fix"
+    "*.{ts,tsx,js,jsx}": "npm run prettier:fix",
+    "*.json": "npm run prettier:fix"
   }
 }
